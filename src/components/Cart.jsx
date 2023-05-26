@@ -18,6 +18,7 @@ const Cart = () => {
             bgHoverColor="light-gray"
             size="2xl"
             borderRadius="50%"
+            bgColor="#ffffff00"
           />
         </div>
         {cartData?.map((item, index) => (

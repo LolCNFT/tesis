@@ -19,6 +19,7 @@ const UserProfile = () => {
           bgHoverColor="light-gray"
           size="2xl"
           borderRadius="50%"
+          bgColor="#ffffff00"
         />
       </div>
       <div className="flex gap-5 items-center mt-6 border-color border-b-1 pb-6">

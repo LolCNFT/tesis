@@ -8,8 +8,8 @@ import { useStateContext } from '../contexts/ContextProvider';
 import product9 from '../data/product9.jpg'
 
 const DropDown = ({ currentMode }) => (
-  <div className="w-28 border-1 border-color px-2 py-1 rounded-md">
-    <DropDownListComponent id="time" fields={{ text: 'Time', value: 'Id' }} style={{ border: 'none', color: (currentMode === 'Dark') && 'white' }} value="1" dataSource={dropdownData} popupHeight="220px" popupWidth="120px" />
+  <div className="w-28 border-1 border-color px-2 py-1 text-black rounded-md">
+    <DropDownListComponent id="time" fields={{ text: 'Time', value: 'Id' }} style={{ border: 'none', color: '#000' }} value="1" dataSource={dropdownData} popupHeight="220px" popupWidth="120px" />
   </div>
 );
 
@@ -27,7 +27,7 @@ const Ecommerce = () => {
             </div>
             <button
               type="button"
-              style={{ backgroundColor: currentColor }}
+              style={{ backgroundColor: '#00dd20' }}
               className="text-2xl opacity-0.9 text-white hover:drop-shadow-xl rounded-full  p-4"
             >
               <BsCurrencyDollar />
@@ -44,7 +44,7 @@ const Ecommerce = () => {
         </div>
         <div className="flex m-3 flex-wrap justify-center gap-1 items-center">
           {earningData.map((item) => (
-            <div key={item.title} className="bg-white h-44 dark:text-gray-200 dark:bg-secondary-dark-bg md:w-56  p-4 pt-9 rounded-2xl flex flex-col align-middle justify-center items-center">
+            <div key={item.title} className="bg-white shadow-md hover:shadow-lg h-44 dark:text-gray-200 dark:bg-secondary-dark-bg md:w-56  p-4 pt-9 rounded-2xl flex flex-col align-middle justify-center items-center">
               <button
                 type="button"
                 style={{ color: item.iconColor, backgroundColor: item.iconBg }}
@@ -65,7 +65,7 @@ const Ecommerce = () => {
       </div>
 
       <div className="flex gap-10 flex-wrap justify-center">
-        <div className="bg-white dark:text-gray-200 dark:bg-secondary-dark-bg m-3 p-4 rounded-2xl md:w-780  ">
+        <div className="bg-white dark:text-gray-200 dark:bg-secondary-dark-bg m-3 p-4 shadow-md hover:shadow-lg rounded-2xl md:w-780  ">
           <div className="flex justify-between">
             <p className="font-semibold text-xl">Mes a Mes</p>
           </div>
@@ -101,8 +101,8 @@ const Ecommerce = () => {
         </div>
         <div>
           <div
-            className=" rounded-2xl md:w-400 p-4 m-3"
-            style={{ backgroundColor: currentColor }}
+            className=" rounded-2xl md:w-400 p-4 m-3 shadow-md hover:shadow-lg"
+            style={{ backgroundColor: "#00dd20" }}
           >
             <div className="flex justify-between items-center ">
               <p className="font-semibold text-white text-2xl">Ahorro</p>
@@ -118,7 +118,7 @@ const Ecommerce = () => {
             </div>
           </div>
 
-          <div className="bg-white dark:text-gray-200 dark:bg-secondary-dark-bg rounded-2xl md:w-400 p-8 m-3 flex justify-center items-center gap-10">
+          <div className="bg-white shadow-md hover:shadow-lg dark:text-gray-200 dark:bg-secondary-dark-bg rounded-2xl md:w-400 p-8 m-3 flex justify-center items-center gap-10">
             <div>
               <p className="text-2xl font-semibold ">$43,246</p>
               <p className="text-gray-400">Ahorro Anual</p>
@@ -131,7 +131,7 @@ const Ecommerce = () => {
         </div>
 
       <div className="flex gap-10 m-4 flex-wrap justify-center">
-        <div className="bg-white dark:text-gray-200 dark:bg-secondary-dark-bg p-6 rounded-2xl">
+        <div className="bg-white shadow-md hover:shadow-lg dark:text-gray-200 dark:bg-secondary-dark-bg p-6 rounded-2xl">
           <div className="flex justify-between items-center gap-2">
             <p className="text-xl font-semibold">Transacciones Recientes</p>
             <DropDown currentMode={currentMode} />
@@ -165,7 +165,7 @@ const Ecommerce = () => {
           </div>
         </div>
     </div>
-    <div className="w-400 bg-white dark:text-gray-200 dark:bg-secondary-dark-bg rounded-2xl p-6 m-3">
+    <div className="w-400 bg-white shadow-md hover:shadow-lg dark:text-gray-200 dark:bg-secondary-dark-bg rounded-2xl p-6 m-3">
           <div className="flex justify-between">
             <p className="text-xl font-semibold">Actividades recomendadas</p>
             <button type="button" className="text-xl font-semibold text-gray-500">

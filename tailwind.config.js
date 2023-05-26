@@ -1,6 +1,6 @@
 module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
-  darkMode: 'class',
+  darkMode: 'classs',
   theme: {
     fontFamily: {
       display: ['Open Sans', 'sans-serif'],
@@ -11,11 +11,12 @@ module.exports = {
         14: '14px',
       },
       backgroundColor: {
-        'main-bg': '#FAFBFB',
-        'main-dark-bg': '#20232A',
-        'secondary-dark-bg': '#33373E',
+        'main-bg': '#ebffff',
+        'main-dark-bg': '#d3ffd8',
+        'secondary-dark-bg': '#FAFBFB',
         'light-gray': '#F7F7F7',
         'half-transparent': 'rgba(0, 0, 0, 0.5)',
+        'green-b': '#3ac38b',
       },
       borderWidth: {
         1: '1px',

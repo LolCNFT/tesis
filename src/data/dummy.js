@@ -487,10 +487,10 @@ export const links = [
         name: 'Agua',
         icon: <FaHandHoldingWater />,
       },
-      {
-        name: 'Gas',
-        icon: <BiGasPump />,
-      },
+      // {
+      //   name: 'Gas',
+      //   icon: <BiGasPump />,
+      // },
       {
         name: 'Luz',
         icon: <BsLightbulb />,
@@ -559,14 +559,14 @@ export const links = [
 ];
 
 export const cartData = [
-  {
-    image:
-      product5,
-    name: 'Gas',
-    category: 'Milk product',
-    price: '$250',
-    percentage: 'IVA: 2%',
-  },
+  // {
+  //   image:
+  //     product5,
+  //   name: 'Gas',
+  //   category: 'Milk product',
+  //   price: '$250',
+  //   percentage: 'IVA: 2%',
+  // },
   {
     image:
       product6,
@@ -688,7 +688,7 @@ export const recentTransactions = [
   {
     icon: <TiTick />,
     amount: '-$350',
-    title: 'Pago Mensual Gas',
+    title: 'Pago',
     desc: 'Transferencia Bancaria',
 
     iconColor: 'rgb(228, 106, 118)',
@@ -697,7 +697,7 @@ export const recentTransactions = [
   },
   {
     icon: <BsCurrencyDollar />,
-    amount: '-$50',
+    amount: '+$50',
     percentage: '+38%',
     title: 'Reembolso ',
     desc: 'Tarjeta Debito',
@@ -3110,13 +3110,13 @@ export const lineCustomSeries = [
     marker: { visible: true, width: 10, height: 10 },
     type: 'Line' },
 
-  { dataSource: lineChartData[1],
-    xName: 'x',
-    yName: 'y',
-    name: 'Gas',
-    width: '2',
-    marker: { visible: true, width: 10, height: 10 },
-    type: 'Line' },
+  // { dataSource: lineChartData[1],
+  //   xName: 'x',
+  //   yName: 'y',
+  //   name: 'Gas',
+  //   width: '2',
+  //   marker: { visible: true, width: 10, height: 10 },
+  //   type: 'Line' },
 
   { dataSource: lineChartData[2],
     xName: 'x',
@@ -3205,20 +3205,20 @@ export const stackedCustomSeries = [
 
   },
 
-  { dataSource: stackedChartData[1],
-    xName: 'x',
-    yName: 'y',
-    name: 'Gas',
-    type: 'StackingColumn',
-    background: 'red',
+  // { dataSource: stackedChartData[1],
+  //   xName: 'x',
+  //   yName: 'y',
+  //   name: 'Gas',
+  //   type: 'StackingColumn',
+  //   background: 'red',
 
-  },
+  // },
   { dataSource: stackedChartData[2],
     xName: 'x',
     yName: 'y',
     name: 'Luz',
     type: 'StackingColumn',
-    background: 'Green',
+    background: '#EADDCA',
 
   },
 

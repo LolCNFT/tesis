@@ -9,7 +9,7 @@ import '../App.css'
 const About = () => {
   return (
     <div className="container my-24 px-6 mx-auto">
-    <div className="mb-32 text-gray-200 text-center">
+    <div className="mb-32 text-gray-800 text-center">
         <h2 className="text-3xl font-bold mb-12">Meet the team</h2>
         <div className="grid md:grid-cols-5 xl:grid-cols-5 gap-x-6 lg:gap-xl-12 align-middle justify-center items-center">
         <div className="mb-12">
